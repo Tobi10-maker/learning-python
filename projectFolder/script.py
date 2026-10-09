@@ -10,9 +10,17 @@ print(f"Host: {host}")
 print(f"Date: {date}")
 print(f"Dress Code: {dress_code}")
 
-meal_total= 20
+meal_total = 20
 
 print(meal_total)
 
 total_food_cost = meal_total * 1.15
 print(total_food_cost)
+x = 1
+k = 2
+print(x)
+print(k)
+
+p = 5
+win = "Congratulations! You have won a prize!"
+pin = 1234
