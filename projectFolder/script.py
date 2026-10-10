@@ -1,3 +1,4 @@
+import math
 host = "Scrimba_Tobi"
 date = "October-16"
 dress_code = "Casual"
@@ -24,3 +25,14 @@ print(k)
 p = 5
 win = "Congratulations! You have won a prize!"
 pin = 1234
+
+students_count = 1000
+print(students_count)
+
+course = "Python Programming"
+
+x = input("X: ")
+
+y = int(x) + 1
+
+print(f"Y: {y}, X: {x}")
