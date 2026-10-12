@@ -30,9 +30,18 @@ students_count = 1000
 print(students_count)
 
 course = "Python Programming"
-
 x = input("X: ")
 
 y = int(x) + 1
 
 print(f"Y: {y}, X: {x}")
+
+temperature = 35
+if temperature > 30:
+    print("It's a hot day")
+    print("Drink plenty of waterls")
+elif temperature > 20:
+    print("It's a nice day")
+else:
+    print("It's cold")
+print("Done")
