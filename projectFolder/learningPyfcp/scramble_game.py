@@ -47,3 +47,6 @@ print(result)
 
 letters = ['p', 'y', 't', 'h', 'o', 'n']
 print("".join(letters))
+
+
+# Equality operator
