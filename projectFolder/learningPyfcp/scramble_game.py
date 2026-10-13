@@ -81,3 +81,7 @@ elif signal == 5:
     print("Full bar no discount today")
 else:
     print("Enter a WIFI strength within the range of 0-5")
+
+
+# string method
+# calling .stripe only removes whitespace from the beginning and end of a string, not in between words
