@@ -43,10 +43,41 @@ random.shuffle(players)
 # Join function it transforms a list into a string
 
 result = "=".join(players)
-print(result)
+# print(result)
 
 letters = ['p', 'y', 't', 'h', 'o', 'n']
-print("".join(letters))
+# print("".join(letters))
 
 
 # Equality operator
+
+
+promo_code = "FLASH50"
+
+# input_promo_code = input("Enter your promo code: ")
+
+# print(f"promo code entered is: {input_promo_code == promo_code}")
+
+
+# if else
+# input_score = int(input("Enter your score: "))
+
+# if input_score >= 60:
+#     # print("You passed the test!")
+# else:
+#     # print("You failed the test!")
+
+# elif statement
+
+signal = 2
+
+if signal == 0:
+    print(f"50% off, sorry for the WIFI issues")
+elif signal == 1 or signal == 2:
+    print(f"20% off, sorry for the WIFI issues")
+elif signal == 3 or signal == 4:
+    print(f"10% off, sorry for the WIFI issues")
+elif signal == 5:
+    print("Full bar no discount today")
+else:
+    print("Enter a WIFI strength within the range of 0-5")

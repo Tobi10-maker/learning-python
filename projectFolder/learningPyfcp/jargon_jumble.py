@@ -18,3 +18,6 @@ random.shuffle(letters)
 
 
 print(f"Scrambled word: {''.join(letters)}")
+
+
+# Equality operator
