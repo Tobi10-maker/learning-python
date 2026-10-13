@@ -23,7 +23,7 @@ excuse = f"I can't come to your  {evnt} because I have to {verb} {number} {noun}
 # print(excuse)
 event_name = "Molabat"
 cost = int(input("Enter the cost of the event: "))
-service_charge = cost * 0.1
+service_charge = cost * 0.15
 group_size = int(input("Enter the number of people in the group: "))
 grand_total = cost + service_charge
 total_per_person = round(grand_total / group_size, 2)
