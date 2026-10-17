@@ -85,3 +85,26 @@ else:
 
 # string method
 # calling .stripe only removes whitespace from the beginning and end of a string, not in between words
+
+
+# Tuple
+# Tuples are similar to lists, but they are immutable, meaning their values cannot be changed after they are created. Tuples are defined using parentheses () instead of square brackets [].
+
+# unpacking tuples
+# unpacking is a way to assign the values of a tuple to individual variables in a single line of code. This can be useful when you want to extract specific values from a tuple without having to access them by index.
+
+steel_blue = (70, 130, 180)
+
+# unpacking in action
+red, green, blue = steel_blue
+
+inventory = [("apple", 10), ("banana", 5), ("orange", 8)]
+
+item, quantity = inventory[0]
+print(f"{item}: {quantity} in stock")
+
+item, quantity = inventory[1]
+print(f"{item}: {quantity} in stock")
+
+item, quantity = inventory[2]
+print(f"{item}: {quantity} in stock")
