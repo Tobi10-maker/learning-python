@@ -108,3 +108,17 @@ print(f"{item}: {quantity} in stock")
 
 item, quantity = inventory[2]
 print(f"{item}: {quantity} in stock")
+
+
+# python convention for conatant is the uppercas, e.g NUMBER=1 the value of num will always be equal to 1 and it cant be changed
+
+
+PASSENGERS = 5
+passenger_num = 1
+
+while passenger_num <= PASSENGERS:
+    print(f"Printing boarding pass {passenger_num} of 5..")
+    passenger_num += 1
+
+
+# append this is used to add items to a list
