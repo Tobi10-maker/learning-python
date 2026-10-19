@@ -14,7 +14,7 @@ letters = list(random_words)
 
 # Jumble the letters
 random.shuffle(letters)
-# print(letters)
+# print(letter
 
 
 print(f"Scrambled word: {''.join(letters)}")
