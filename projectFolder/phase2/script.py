@@ -77,6 +77,52 @@ room_size = room_area(32, 9)
 print(f"The room size is {room_size}")
 
 tax_together = round(add_tax(87), 0)
-print(f"With tax, that comes to ${tax_together}")
+print(f"With tax, that comes to ${tax_together}\n\n\n")
 
 full_name("Tobi", "Odumasa")
+
+
+# for loop
+
+guests = ["Dara", "Taye", "Kenny", "Odun"]
+
+for guest in guests:
+    print(guest)
+
+
+nominees = ["pixapal", "TaskTanic", "SnackMap", "MoodTunes"]
+
+awards = ["Best payment app", "Best productivity app",
+          "Best snacking app", "Best music app"]
+
+for nominee in nominees:
+
+    print(f"\nNominated for best app {nominee}")
+
+
+print("\nAnd those are your nominees")
+
+
+# Loop through list of tuples
+
+guests = [("Marcus", "Lasagna"), ("Lena", "Salad"), ("Sarah", "Brownies")]
+
+for guest in guests:
+    name, dish = guest
+    print(f"\n{name} is bringing {dish}")
+
+
+lineups = [
+    ("The Wailers", "reggae", 45),
+    ("Daft Punk", "electronic", 90),
+    ("Adele", "pop", 60),
+    ("Metallica", "metal", 100)]
+
+
+for lineup in lineups:
+    band, genre, minutes = lineup
+
+    if minutes >= 90:
+        print(f"\n{band} ({genre}) plays a long set: {minutes} minutes")
+    else:
+        print(f"\n{band} ({genre}) plays {minutes} minutes")
