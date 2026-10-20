@@ -1,15 +1,34 @@
-queue = [("Tobi", "Ojo", "Seun", "obi")]
+queue = [("Wizkid", "Essence"),
+         ("Davido", "Unavailable"),
+         ("Burna Boy", "Last Last"),
+         ("Rema", "Calm Down"),
+         ("Asake", "Lonely At The Top")]
 
 
 def show_queue(queue):
     # the """ is called a DOCSTRING it is used to tell what a string is supposed to do its a bit different from a comment
     """ Print everyone currently in the queue """
-    print("[the queue goes here!]")
+
+    print("Current Queue:\n")
+    for singer in queue:
+        name, song = singer
+        print(f"{name} - {song}")
+
+
+def prompt_for_singer():
+    name = input("Name:")
+    song = input("Song:")
+    return [(name.strip().title()), (song.strip().title())]
 
 
 def add_singer(queue):
     """This will add new singers"""
-    print("\n[add a singer!]")
+    # (names, songs) = prompt_for_singer(name, song)
+    # show_queue((names, songs)).append()
+    # print(f"Added {names} to the queue")
+    singer, song = prompt_for_singer()
+    print(f"Added {singer} to the queue\n")
+    queue.append((singer, song))
 
 
 def remove_singer(queue):
