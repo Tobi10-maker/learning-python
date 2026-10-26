@@ -126,3 +126,13 @@ for lineup in lineups:
         print(f"\n{band} ({genre}) plays a long set: {minutes} minutes")
     else:
         print(f"\n{band} ({genre}) plays {minutes} minutes")
+
+
+# pop
+# the diference between pop and remove is that pop remove item by index while .remove remove item by value
+
+lineup_pop = lineups.pop(0)
+print(lineup_pop)
+
+
+# .insert() this command is used to insert in a specific index with a specific value

@@ -1,3 +1,5 @@
+import math
+
 queue = [("Wizkid", "Essence"),
          ("Davido", "Unavailable"),
          ("Burna Boy", "Last Last"),
@@ -10,9 +12,10 @@ def show_queue(queue):
     """ Print everyone currently in the queue """
 
     print("Current Queue:\n")
-    for singer in queue:
+    for i, singer in enumerate(queue):
+        # enumerate this command is used to index
         name, song = singer
-        print(f"{name} - {song}")
+        print(f"{i + 1} {name} - {song}")
 
 
 def prompt_for_singer():
@@ -31,9 +34,32 @@ def add_singer(queue):
     queue.append((singer, song))
 
 
+def next_singer(queue):
+    first_singer = queue.pop(0)
+    name, song = first_singer
+    print(f"NOW UP: {name} - {song}\n")
+    # return first_singer
+
+
 def remove_singer(queue):
     """This removed a singer"""
-    print("\n[remove a singer!]")
+    who_to_remove = input("Who do you wan to remove: ").strip().title()
+
+    for singer in queue:
+        if singer[0] == who_to_remove:
+            queue.remove(singer)
+            print(f"\n{who_to_remove} was removed from the queue\n")
+            return
+    print(f"\nThere is no match for {who_to_remove}\n")
+
+
+def move_to_top(queue):
+    position_move_to = int(input(
+        "Who do u want to move to the top? Enter a number: \n"))
+    remove_from_queue = queue.pop(position_move_to - 1)
+    name, song = remove_from_queue
+    queue.insert(0, remove_from_queue)
+    print(f"\nMoved {name} to the top of the queue!\n")
 
 
 def run_app(queue):
@@ -45,7 +71,7 @@ def run_app(queue):
 
     while is_running:
         show_queue(queue)
-        print("\nOptions: add / remove / quit")
+        print("\nOptions: add / remove / quit / next / top")
         command = input(">")
 
         if command == "quit":
@@ -55,6 +81,10 @@ def run_app(queue):
             add_singer(queue)
         elif command == "remove":
             remove_singer(queue)
+        elif command == "next":
+            next_singer(queue)
+        elif command == "top":
+            move_to_top(queue)
         else:
             print(f"\nSorry i dont know the command '{command}'")
 
