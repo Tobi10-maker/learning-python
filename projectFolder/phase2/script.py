@@ -136,3 +136,25 @@ print(lineup_pop)
 
 
 # .insert() this command is used to insert in a specific index with a specific value
+
+# logical operator
+
+got_enought_sun = True
+
+# guard clause: it leaves at the top of a function to check for a bad case and if it find a bad case it handles it and return right away
+# A guard clause is a programming pattern that uses conditional statements at the beginning of a function to check for errors or invalid inputs, exiting or returning early if those conditions are met
+
+# eg below
+
+
+def serve_order(orders):
+    if len(orders) == 0:
+        print('Nothing left to serve.')
+        return
+    item = orders.pop(0)
+    print(f"serving: {item}")
+
+    serve_order([])
+
+
+# try except
